@@ -1,0 +1,55 @@
+/* The Claude Studio website (spec updates FR-225, design updates §2): Studio's Minimal tokens, light and dark by system. */
+:root { --bg: #ffffff; --panel: #f7f7f8; --surface: #f7f7f8; --border: #e6e6ea; --text: #18181b; --muted: #63636e; --accent: #2563eb; --on-accent: #fff; --link: #1d4ed8; --focus: #2563eb;
+  --warn: #8a5a12; --ok: #2f7d4f; --font: "Segoe UI Variable", "Segoe UI", system-ui, -apple-system, Roboto, sans-serif; --mono: ui-monospace, "Cascadia Code", Consolas, monospace;
+  --shadow: 0 6px 24px rgba(0, 0, 0, .12); color-scheme: light; }
+@media (prefers-color-scheme: dark) {
+  :root { --bg: #0b0b0d; --panel: #111114; --surface: #17171a; --border: #26262b; --text: #ededf0; --muted: #9d9da8; --accent: #6b9bff; --on-accent: #0b0b0d; --link: #8fb3ff; --focus: #6b9bff;
+    --warn: #e3b25a; --ok: #6fcf97; --shadow: none; color-scheme: dark; }
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+body { margin: 0; background: var(--bg); color: var(--text); font: 16px/1.55 var(--font); }
+a { color: var(--link); }
+:focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; }
+code { font: .92em var(--mono); }
+header { display: flex; align-items: center; gap: 16px; padding: 14px 24px; border-bottom: 1px solid var(--border); flex-wrap: wrap; max-width: 1100px; margin: 0 auto; }
+.brand { display: flex; align-items: center; gap: 8px; font-weight: 700; font-size: 17px; text-decoration: none; color: var(--text); }
+.brand svg { display: block; }
+nav { display: flex; gap: 16px; margin-left: auto; flex-wrap: wrap; font-size: 14px; }
+nav a { color: var(--muted); text-decoration: none; } nav a:hover { color: var(--text); }
+section { max-width: 1000px; margin: 0 auto; padding: 40px 24px; }
+section + section { border-top: 1px solid var(--border); }
+h2 { font-size: 24px; margin: 0 0 14px; }
+.hero { display: grid; grid-template-columns: 1.1fr 1fr; gap: 32px; align-items: center; }
+.hero h1 { font-size: 40px; line-height: 1.1; margin: 0 0 12px; }
+.lead { font-size: 18px; color: var(--muted); margin: 0 0 20px; }
+.dl { display: inline-flex; flex-direction: column; gap: 2px; padding: 12px 20px; border-radius: 14px; background: var(--accent); color: var(--on-accent); text-decoration: none; font-weight: 600; font-size: 16px; }
+.dl small { font-weight: 400; opacity: .85; font-size: 12.5px; }
+.meta { color: var(--muted); font-size: 13px; margin-top: 10px; }
+.shot { width: 100%; height: auto; border-radius: 12px; border: 1px solid var(--border); box-shadow: var(--shadow); display: block; }
+.cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+.card { border: 1px solid var(--border); border-radius: 14px; padding: 14px 16px; background: var(--surface); }
+.card b { display: block; margin-bottom: 4px; } .card p { margin: 0; color: var(--muted); font-size: 14px; }
+.req { display: grid; grid-template-columns: repeat(2, 1fr); gap: 6px 24px; padding: 0; list-style: none; margin: 0 0 16px; }
+.req li::before { content: "✓ "; color: var(--ok); font-weight: 700; }
+.steps { counter-reset: s; list-style: none; padding: 0; margin: 0; display: grid; gap: 10px; }
+.steps li { counter-increment: s; display: grid; grid-template-columns: 32px 1fr; gap: 10px; }
+.steps li::before { content: counter(s); width: 28px; height: 28px; border-radius: 50%; background: var(--surface); border: 1px solid var(--border); display: grid; place-items: center; font-weight: 600; font-size: 14px; }
+.callout { margin: 14px 0 0; padding: 10px 14px; border-radius: 12px; background: color-mix(in srgb, var(--warn) 10%, var(--bg)); border: 1px solid color-mix(in srgb, var(--warn) 35%, transparent); font-size: 14px; }
+.rel { border: 1px solid var(--border); border-radius: 14px; margin-bottom: 10px; }
+.rel summary { cursor: pointer; padding: 12px 16px; display: flex; gap: 10px; align-items: baseline; flex-wrap: wrap; list-style: none; }
+.rel summary::-webkit-details-marker { display: none; }
+.rel summary::before { content: "▸"; color: var(--muted); } .rel[open] summary::before { content: "▾"; }
+.rel summary b { font-size: 16px; } .rel summary span { color: var(--muted); font-size: 13px; }
+.rel ul { margin: 0; padding: 0 16px 14px 40px; }
+.tag { font-size: 11px; padding: 1px 8px; border-radius: 999px; color: var(--link); background: color-mix(in srgb, var(--accent) 12%, var(--bg)); border: 1px solid color-mix(in srgb, var(--accent) 35%, transparent); }
+.privacy { display: grid; grid-template-columns: auto 1fr; gap: 14px; align-items: start; }
+.privacy .ico { font-size: 28px; }
+footer { padding: 20px 24px 28px; color: var(--muted); font-size: 13px; text-align: center; border-top: 1px solid var(--border); }
+@media (max-width: 760px) {
+  .hero, .cards, .req { grid-template-columns: 1fr; }
+  .hero h1 { font-size: 30px; }
+  header { padding: 12px 16px; } section { padding: 28px 16px; }
+  nav { margin-left: 0; width: 100%; gap: 14px; }
+}

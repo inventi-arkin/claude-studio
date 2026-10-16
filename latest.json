@@ -1,0 +1,29 @@
+{
+  "format": "claude-studio-release",
+  "version": "0.17.0",
+  "title": "Website and updates",
+  "date": "2026-10-16",
+  "notes": [
+    "This website, with the installer and release notes.",
+    "Studio checks for updates and installs them in one click, going back by itself if a new version doesn't start.",
+    "Studios from before v0.17: unzip this release and run Install Claude Studio.cmd to upgrade in place."
+  ],
+  "zip": {
+    "name": "claude-studio-0.17.0.zip",
+    "url": "releases/claude-studio-0.17.0.zip",
+    "size": 205554,
+    "sha256": "290a9452c339d469d19eea85469c9352d9f7342500233605f255ecf6fe4229f4"
+  },
+  "history": [
+    {
+      "version": "0.17.0",
+      "title": "Website and updates",
+      "date": "2026-10-16",
+      "notes": [
+        "This website, with the installer and release notes.",
+        "Studio checks for updates and installs them in one click, going back by itself if a new version doesn't start.",
+        "Studios from before v0.17: unzip this release and run Install Claude Studio.cmd to upgrade in place."
+      ]
+    }
+  ]
+}
