@@ -19,8 +19,8 @@
     <div>
       <h1>Claude Code, in a friendly window.</h1>
       <p class="lead">Claude Studio is a local web UI for Claude Code on Windows. Chats by project, clear permission cards, a pixel companion, and it all runs only on your PC.</p>
-      <a class="dl" href="releases/claude-studio-0.19.0.zip">⬇ Download Claude Studio v0.19<small>claude-studio-0.19.0.zip · 0.2 MB · Oct 19, 2026</small></a>
-      <p class="meta">Windows 10 or 11 · Free · Updates itself from this site when you say so · <a href="#notes">What's new</a></p>
+      <a class="dl" href="https://github.com/inventi-arkin/claude-studio/releases/download/v0.19.1/claude-studio-0.19.1.zip">⬇ Download Claude Studio v0.19.1<small>claude-studio-0.19.1.zip · 0.2 MB · Oct 19, 2026</small></a>
+      <p class="meta">Windows 10 or 11 · Free · Updates itself from this site when you say so · Downloads from GitHub · <a href="#notes">What's new</a></p>
     </div>
     <img class="shot" src="screenshot.png" alt="Claude Studio's Home page: a greeting, quick actions and a pixel-art meadow with Claude" width="1280" height="860">
   </section>
@@ -50,7 +50,9 @@
   </section>
   <section id="notes">
     <h2>Release notes</h2>
-    <details class="rel" open><summary><b>v0.19</b><span>Trust levels and Start with Windows · Oct 19, 2026</span><span class="tag">Latest</span></summary>
+    <details class="rel" open><summary><b>v0.19.1</b><span>Counted downloads · Oct 19, 2026</span><span class="tag">Latest</span></summary>
+      <ul><li>The Download button now downloads from GitHub Releases, so each version's downloads are counted.</li><li>Installed Studios still update from this website, exactly as before.</li><li>The Privacy section explains what downloading through GitHub means.</li></ul></details>
+    <details class="rel"><summary><b>v0.19</b><span>Trust levels and Start with Windows · Oct 19, 2026</span></summary>
       <ul><li>New Work freely in this project level: Claude edits that project's files and runs ordinary commands without asking, while deleting, publishing and chained commands still ask.</li><li>Permission cards: any command can be allowed once at any length, rule errors say what is wrong, and a new Allow bookkeeping files button (Settings, Permissions) lets log and memory updates run without asking.</li><li>Start with Windows: a Startup switch in Settings, Updates starts Studio when you sign in (off by default).</li><li>Reopened chats show Allowed lines instead of cancelled cards.</li></ul></details>
     <details class="rel"><summary><b>v0.17</b><span>Website and updates · Oct 16, 2026</span></summary>
       <ul><li>This website, with the installer and release notes.</li><li>Studio checks for updates and installs them in one click, going back by itself if a new version doesn't start.</li><li>Studios from before v0.17: unzip this release and run Install Claude Studio.cmd to upgrade in place.</li></ul></details>
@@ -59,7 +61,8 @@
     <span class="ico" aria-hidden="true">🔒</span>
     <div><h2>Privacy</h2>
       <p>Claude Studio runs on your PC and only listens to your own browser. Your chats, files and settings never leave the PC, except what Claude Code itself sends to Anthropic to answer you.</p>
-      <p>To check for updates, Studio reads two small files from this site (when it starts, every 6 hours, or when you click Check for updates; you can turn the automatic check off). It sends nothing about you or your PC. Updates are signed, and nothing is installed unless you click Update.</p></div>
+      <p>To check for updates, Studio reads two small files from this site (when it starts, every 6 hours, or when you click Check for updates; you can turn the automatic check off). It sends nothing about you or your PC. Updates are signed, and nothing is installed unless you click Update.</p>
+      <p><b>Downloads.</b> Opening this page loads nothing from other sites. The Download button fetches the zip from GitHub, which counts downloads and, like any download site, may log your IP address. Once installed, Studio contacts only this website, and only to check for updates.</p></div>
   </section>
 </main>
 <footer>Claude Studio is a personal, unofficial project. Claude and Claude Code are products of Anthropic.</footer>

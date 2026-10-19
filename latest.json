@@ -1,21 +1,30 @@
 {
   "format": "claude-studio-release",
-  "version": "0.19.0",
-  "title": "Trust levels and Start with Windows",
+  "version": "0.19.1",
+  "title": "Counted downloads",
   "date": "2026-10-19",
   "notes": [
-    "New Work freely in this project level: Claude edits that project's files and runs ordinary commands without asking, while deleting, publishing and chained commands still ask.",
-    "Permission cards: any command can be allowed once at any length, rule errors say what is wrong, and a new Allow bookkeeping files button (Settings, Permissions) lets log and memory updates run without asking.",
-    "Start with Windows: a Startup switch in Settings, Updates starts Studio when you sign in (off by default).",
-    "Reopened chats show Allowed lines instead of cancelled cards."
+    "The Download button now downloads from GitHub Releases, so each version's downloads are counted.",
+    "Installed Studios still update from this website, exactly as before.",
+    "The Privacy section explains what downloading through GitHub means."
   ],
   "zip": {
-    "name": "claude-studio-0.19.0.zip",
-    "url": "releases/claude-studio-0.19.0.zip",
-    "size": 215089,
-    "sha256": "21b3cc1c9305535ee5f49ef0260f3e58f6b37237f5c660e904a1e51e9e3e0416"
+    "name": "claude-studio-0.19.1.zip",
+    "url": "releases/claude-studio-0.19.1.zip",
+    "size": 219540,
+    "sha256": "93ed1b44dc55b733e51bf77091c5febeb491ce6644c5ab9b9d9c4c54cb9ac790"
   },
   "history": [
+    {
+      "version": "0.19.1",
+      "title": "Counted downloads",
+      "date": "2026-10-19",
+      "notes": [
+        "The Download button now downloads from GitHub Releases, so each version's downloads are counted.",
+        "Installed Studios still update from this website, exactly as before.",
+        "The Privacy section explains what downloading through GitHub means."
+      ]
+    },
     {
       "version": "0.19.0",
       "title": "Trust levels and Start with Windows",
