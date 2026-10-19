@@ -1,20 +1,36 @@
 {
   "format": "claude-studio-release",
-  "version": "0.19.1",
-  "title": "Counted downloads",
+  "version": "0.20.0",
+  "title": "Attachments",
   "date": "2026-10-19",
   "notes": [
-    "The Download button now downloads from GitHub Releases, so each version's downloads are counted.",
-    "Installed Studios still update from this website, exactly as before.",
-    "The Privacy section explains what downloading through GitHub means."
+    "Attach files to a message: the + button, drag and drop onto the chat, or paste a screenshot.",
+    "Claude sees images and PDFs directly; other files (CSV, logs, text) are saved on your PC and Claude opens them by path.",
+    "Attached files are kept with the chat: in Home for General chats, in the project's folder for project chats (left out of git).",
+    "Reopened chats show the same thumbnails and file chips; a file you moved shows as \"no longer there\".",
+    "Deleting a chat forever asks whether to keep its files (moved to attachments\\_kept) or delete them too; the 30-day clean-up always keeps them.",
+    "Programs and scripts are refused, and every file is served safely: pictures and PDFs open in the browser, everything else downloads."
   ],
   "zip": {
-    "name": "claude-studio-0.19.1.zip",
-    "url": "releases/claude-studio-0.19.1.zip",
-    "size": 219540,
-    "sha256": "93ed1b44dc55b733e51bf77091c5febeb491ce6644c5ab9b9d9c4c54cb9ac790"
+    "name": "claude-studio-0.20.0.zip",
+    "url": "releases/claude-studio-0.20.0.zip",
+    "size": 231597,
+    "sha256": "ff39a9f92cbb6ca7b48f7ddb8f64005c27f733aee08a4adca518f193f3909fe5"
   },
   "history": [
+    {
+      "version": "0.20.0",
+      "title": "Attachments",
+      "date": "2026-10-19",
+      "notes": [
+        "Attach files to a message: the + button, drag and drop onto the chat, or paste a screenshot.",
+        "Claude sees images and PDFs directly; other files (CSV, logs, text) are saved on your PC and Claude opens them by path.",
+        "Attached files are kept with the chat: in Home for General chats, in the project's folder for project chats (left out of git).",
+        "Reopened chats show the same thumbnails and file chips; a file you moved shows as \"no longer there\".",
+        "Deleting a chat forever asks whether to keep its files (moved to attachments\\_kept) or delete them too; the 30-day clean-up always keeps them.",
+        "Programs and scripts are refused, and every file is served safely: pictures and PDFs open in the browser, everything else downloads."
+      ]
+    },
     {
       "version": "0.19.1",
       "title": "Counted downloads",
