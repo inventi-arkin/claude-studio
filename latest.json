@@ -1,20 +1,32 @@
 {
   "format": "claude-studio-release",
-  "version": "0.17.0",
-  "title": "Website and updates",
-  "date": "2026-10-16",
+  "version": "0.19.0",
+  "title": "Trust levels and Start with Windows",
+  "date": "2026-10-19",
   "notes": [
-    "This website, with the installer and release notes.",
-    "Studio checks for updates and installs them in one click, going back by itself if a new version doesn't start.",
-    "Studios from before v0.17: unzip this release and run Install Claude Studio.cmd to upgrade in place."
+    "New Work freely in this project level: Claude edits that project's files and runs ordinary commands without asking, while deleting, publishing and chained commands still ask.",
+    "Permission cards: any command can be allowed once at any length, rule errors say what is wrong, and a new Allow bookkeeping files button (Settings, Permissions) lets log and memory updates run without asking.",
+    "Start with Windows: a Startup switch in Settings, Updates starts Studio when you sign in (off by default).",
+    "Reopened chats show Allowed lines instead of cancelled cards."
   ],
   "zip": {
-    "name": "claude-studio-0.17.0.zip",
-    "url": "releases/claude-studio-0.17.0.zip",
-    "size": 205554,
-    "sha256": "290a9452c339d469d19eea85469c9352d9f7342500233605f255ecf6fe4229f4"
+    "name": "claude-studio-0.19.0.zip",
+    "url": "releases/claude-studio-0.19.0.zip",
+    "size": 215089,
+    "sha256": "21b3cc1c9305535ee5f49ef0260f3e58f6b37237f5c660e904a1e51e9e3e0416"
   },
   "history": [
+    {
+      "version": "0.19.0",
+      "title": "Trust levels and Start with Windows",
+      "date": "2026-10-19",
+      "notes": [
+        "New Work freely in this project level: Claude edits that project's files and runs ordinary commands without asking, while deleting, publishing and chained commands still ask.",
+        "Permission cards: any command can be allowed once at any length, rule errors say what is wrong, and a new Allow bookkeeping files button (Settings, Permissions) lets log and memory updates run without asking.",
+        "Start with Windows: a Startup switch in Settings, Updates starts Studio when you sign in (off by default).",
+        "Reopened chats show Allowed lines instead of cancelled cards."
+      ]
+    },
     {
       "version": "0.17.0",
       "title": "Website and updates",
