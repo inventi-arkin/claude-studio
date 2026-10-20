@@ -19,7 +19,7 @@
     <div>
       <h1>Claude Code, in a friendly window.</h1>
       <p class="lead">Claude Studio is a local web UI for Claude Code on Windows. Chats by project, clear permission cards, a pixel companion, and it all runs only on your PC.</p>
-      <a class="dl" href="https://github.com/inventi-arkin/claude-studio/releases/download/v0.20.0/claude-studio-0.20.0.zip">⬇ Download Claude Studio v0.20<small>claude-studio-0.20.0.zip · 0.2 MB · Oct 19, 2026</small></a>
+      <a class="dl" href="https://github.com/inventi-arkin/claude-studio/releases/download/v0.20.1/claude-studio-0.20.1.zip">⬇ Download Claude Studio v0.20.1<small>claude-studio-0.20.1.zip · 0.2 MB · Oct 20, 2026</small></a>
       <p class="meta">Windows 10 or 11 · Free · Updates itself from this site when you say so · Downloads from GitHub · <a href="#notes">What's new</a></p>
     </div>
     <img class="shot" src="screenshot.png" alt="Claude Studio's Home page: a greeting, quick actions and a pixel-art meadow with Claude" width="1280" height="860">
@@ -50,7 +50,9 @@
   </section>
   <section id="notes">
     <h2>Release notes</h2>
-    <details class="rel" open><summary><b>v0.20</b><span>Attachments · Oct 19, 2026</span><span class="tag">Latest</span></summary>
+    <details class="rel" open><summary><b>v0.20.1</b><span>Chats keep their project · Oct 20, 2026</span><span class="tag">Latest</span></summary>
+      <ul><li>A chat now stays in the project it was started in. Before, choosing another project while a chat was open and then sending moved that chat to the other project.</li><li>Choosing another project while a chat is open now starts a new chat there. What you typed and any attached files come along, and a reply still being written keeps going.</li><li>Opening a chat from Home, Ctrl K or a link now also switches to that project's permission mode.</li><li>A message that isn't sent keeps its text in the message box.</li></ul></details>
+    <details class="rel"><summary><b>v0.20</b><span>Attachments · Oct 19, 2026</span></summary>
       <ul><li>Attach files to a message: the + button, drag and drop onto the chat, or paste a screenshot.</li><li>Claude sees images and PDFs directly; other files (CSV, logs, text) are saved on your PC and Claude opens them by path.</li><li>Attached files are kept with the chat: in Home for General chats, in the project's folder for project chats (left out of git).</li><li>Reopened chats show the same thumbnails and file chips; a file you moved shows as &quot;no longer there&quot;.</li><li>Deleting a chat forever asks whether to keep its files (moved to attachments\_kept) or delete them too; the 30-day clean-up always keeps them.</li><li>Programs and scripts are refused, and every file is served safely: pictures and PDFs open in the browser, everything else downloads.</li></ul></details>
     <details class="rel"><summary><b>v0.19.1</b><span>Counted downloads · Oct 19, 2026</span></summary>
       <ul><li>The Download button now downloads from GitHub Releases, so each version's downloads are counted.</li><li>Installed Studios still update from this website, exactly as before.</li><li>The Privacy section explains what downloading through GitHub means.</li></ul></details>

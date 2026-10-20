@@ -1,23 +1,32 @@
 {
   "format": "claude-studio-release",
-  "version": "0.20.0",
-  "title": "Attachments",
-  "date": "2026-10-19",
+  "version": "0.20.1",
+  "title": "Chats keep their project",
+  "date": "2026-10-20",
   "notes": [
-    "Attach files to a message: the + button, drag and drop onto the chat, or paste a screenshot.",
-    "Claude sees images and PDFs directly; other files (CSV, logs, text) are saved on your PC and Claude opens them by path.",
-    "Attached files are kept with the chat: in Home for General chats, in the project's folder for project chats (left out of git).",
-    "Reopened chats show the same thumbnails and file chips; a file you moved shows as \"no longer there\".",
-    "Deleting a chat forever asks whether to keep its files (moved to attachments\\_kept) or delete them too; the 30-day clean-up always keeps them.",
-    "Programs and scripts are refused, and every file is served safely: pictures and PDFs open in the browser, everything else downloads."
+    "A chat now stays in the project it was started in. Before, choosing another project while a chat was open and then sending moved that chat to the other project.",
+    "Choosing another project while a chat is open now starts a new chat there. What you typed and any attached files come along, and a reply still being written keeps going.",
+    "Opening a chat from Home, Ctrl K or a link now also switches to that project's permission mode.",
+    "A message that isn't sent keeps its text in the message box."
   ],
   "zip": {
-    "name": "claude-studio-0.20.0.zip",
-    "url": "releases/claude-studio-0.20.0.zip",
-    "size": 231597,
-    "sha256": "ff39a9f92cbb6ca7b48f7ddb8f64005c27f733aee08a4adca518f193f3909fe5"
+    "name": "claude-studio-0.20.1.zip",
+    "url": "releases/claude-studio-0.20.1.zip",
+    "size": 232095,
+    "sha256": "2188a79238b421adb1604dbd4669c0e1a429a3b3792a2d56eae40b0a9b2e7f82"
   },
   "history": [
+    {
+      "version": "0.20.1",
+      "title": "Chats keep their project",
+      "date": "2026-10-20",
+      "notes": [
+        "A chat now stays in the project it was started in. Before, choosing another project while a chat was open and then sending moved that chat to the other project.",
+        "Choosing another project while a chat is open now starts a new chat there. What you typed and any attached files come along, and a reply still being written keeps going.",
+        "Opening a chat from Home, Ctrl K or a link now also switches to that project's permission mode.",
+        "A message that isn't sent keeps its text in the message box."
+      ]
+    },
     {
       "version": "0.20.0",
       "title": "Attachments",
