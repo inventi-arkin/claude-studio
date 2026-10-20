@@ -1,21 +1,26 @@
 {
   "format": "claude-studio-release",
-  "version": "0.20.1",
-  "title": "Chats keep their project",
+  "version": "0.20.2",
+  "title": "Installer fix",
   "date": "2026-10-20",
   "notes": [
-    "A chat now stays in the project it was started in. Before, choosing another project while a chat was open and then sending moved that chat to the other project.",
-    "Choosing another project while a chat is open now starts a new chat there. What you typed and any attached files come along, and a reply still being written keeps going.",
-    "Opening a chat from Home, Ctrl K or a link now also switches to that project's permission mode.",
-    "A message that isn't sent keeps its text in the message box."
+    "Fixed the installer on a new PC: when Node.js or Git was missing, \"Install Claude Studio.cmd\" got stuck instead of installing them."
   ],
   "zip": {
-    "name": "claude-studio-0.20.1.zip",
-    "url": "releases/claude-studio-0.20.1.zip",
-    "size": 232095,
-    "sha256": "2188a79238b421adb1604dbd4669c0e1a429a3b3792a2d56eae40b0a9b2e7f82"
+    "name": "claude-studio-0.20.2.zip",
+    "url": "releases/claude-studio-0.20.2.zip",
+    "size": 231985,
+    "sha256": "04141cf3d02497b41c2fd169868ae7d539503fb1699f83d24252d7aa46af0aec"
   },
   "history": [
+    {
+      "version": "0.20.2",
+      "title": "Installer fix",
+      "date": "2026-10-20",
+      "notes": [
+        "Fixed the installer on a new PC: when Node.js or Git was missing, \"Install Claude Studio.cmd\" got stuck instead of installing them."
+      ]
+    },
     {
       "version": "0.20.1",
       "title": "Chats keep their project",
