@@ -1,18 +1,30 @@
 {
   "format": "claude-studio-release",
-  "version": "0.20.2",
-  "title": "Installer fix",
-  "date": "2026-10-20",
+  "version": "0.20.3",
+  "title": "Cleaned-up chats",
+  "date": "2026-11-24",
   "notes": [
-    "Fixed the installer on a new PC: when Node.js or Git was missing, \"Install Claude Studio.cmd\" got stuck instead of installing them."
+    "Old chats no longer fail with \"No conversation found\": when Claude Code has cleaned up a chat's conversation, Studio says so, shows the earlier conversation from the saved transcript, and continues the chat in a new session with that conversation given to Claude as context.",
+    "If the conversation disappears while Studio runs, your message is not lost: it goes back into the message box with a \"Not sent\" note.",
+    "The chat column no longer slips under an open sidebar on mid-size windows."
   ],
   "zip": {
-    "name": "claude-studio-0.20.2.zip",
-    "url": "releases/claude-studio-0.20.2.zip",
-    "size": 231985,
-    "sha256": "04141cf3d02497b41c2fd169868ae7d539503fb1699f83d24252d7aa46af0aec"
+    "name": "claude-studio-0.20.3.zip",
+    "url": "releases/claude-studio-0.20.3.zip",
+    "size": 236611,
+    "sha256": "d5443a8f8ed2b2c6339846f771c626c05183a5081dc4f68b463cb4cd3df2b926"
   },
   "history": [
+    {
+      "version": "0.20.3",
+      "title": "Cleaned-up chats",
+      "date": "2026-11-24",
+      "notes": [
+        "Old chats no longer fail with \"No conversation found\": when Claude Code has cleaned up a chat's conversation, Studio says so, shows the earlier conversation from the saved transcript, and continues the chat in a new session with that conversation given to Claude as context.",
+        "If the conversation disappears while Studio runs, your message is not lost: it goes back into the message box with a \"Not sent\" note.",
+        "The chat column no longer slips under an open sidebar on mid-size windows."
+      ]
+    },
     {
       "version": "0.20.2",
       "title": "Installer fix",
